@@ -1,0 +1,85 @@
+.services {
+    background-color: rgb(239, 244, 250);
+}
+
+.services .main-heading {
+    font-family: "Bebas Neue", sans-serif;
+    color: orange;
+    margin: 100px 0 50px 100px;
+    font-weight: 800;
+    font-size: 80px;
+    text-align: left;
+}
+
+.services .main-para {
+    color: black;
+    margin: 0 200px 100px 100px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.heading2 {
+    font-family: "Bebas Neue", sans-serif;
+    color: black;
+    font-size: 40px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    margin: 70px 150px 100px 150px;
+}
+
+.clientr {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: normal;
+    padding: 0 100px;
+    margin-bottom: 150px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .services .main-heading {
+        font-size: 32px;
+        margin: 50px 0 30px 0;
+        text-align: center;
+    }
+
+    .services .main-para {
+        font-size: 16px;
+        margin: 0;
+        padding: 10px 50px 30px 50px;
+    }
+
+    .heading2 {
+        margin: 40px 0 0 0;
+        font-size: 34px;
+    }
+
+    .cards {
+        display: grid;
+        place-items: center;
+        margin: 50px 20px;
+    }
+
+    .clientr {
+        margin: 30px 0 100px 0;
+        grid-template-columns: none;
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1100px) {
+   
+    .cards {    
+    margin-left: 120px;
+    margin-right: 120px;
+    }
+}
+

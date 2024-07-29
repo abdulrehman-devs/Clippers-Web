@@ -1,0 +1,182 @@
+.contact {
+    background-color: rgb(239, 244, 250);
+}
+
+.contact h1 {
+    color: orange;
+    margin: 60px 0 40px 200px;
+    font-size: 50px;
+    font-weight: 800;
+    text-shadow: 10px 10px 10px rgb(32, 31, 31);
+}
+
+.form .text h2 {
+    color: black;
+    font-weight: 700;
+    font-size: 45px;
+    text-shadow: 10px 10px 10px rgb(143, 136, 136);
+}
+
+.form {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 150px;
+    margin: 0px 100px 100px 200px;
+}
+
+.form .text h2,
+span {
+    line-height: 100px;
+}
+
+.form .text span {
+    color: orange;
+    letter-spacing: 2px;
+    font-weight: 800;
+
+}
+
+.form .text p {
+    color: black;
+}
+
+.form .form-inputs p {
+    line-height: 20px;
+    margin-top: 50px;
+}
+
+.form-inputs input[type='text'],
+.form-inputs input[type='email'] {
+    height: 50px;
+    width: 400px;
+    color: black;
+    letter-spacing: 2px;
+    padding: 0 10px;
+    box-shadow: 10px 10px 10px gray;
+    border: none;
+}
+
+.form-inputs #msg {
+    width: 400px;
+    height: 200px;
+}
+
+.form-inputs button {
+    padding: 10px 20px;
+    color: black;
+    background-color: orange;
+    box-shadow: 10px 10px 10px rgb(20, 20, 20);
+    font-weight: 600;
+    letter-spacing: 3px;
+    border: none;
+    margin: 20px 0 0 0;
+}
+
+.form-inputs button:hover {
+    background-color: rgb(216, 150, 27);
+    transition: background-color 0.3s ease;
+}
+
+.map-container iframe {
+    width: 700px;
+    height: 500px;
+    margin: 0px 0px 100px 300px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .contact h1 {
+        font-size: 37px;
+        text-align: center;
+        margin: 0;
+    }
+
+    .form {
+        flex-direction: column;
+        justify-content: center;
+        place-items: center;
+        row-gap: normal;
+        margin: 0;
+    }
+
+    .form .text {
+        display: grid;
+        place-items: center;
+    }
+
+    .form .text h2 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .form .text p {
+        font-size: 16px;
+        margin: 0 40px 0 40px;
+    }
+
+    .form-inputs {
+        display: grid;
+    }
+
+    .form-inputs input[type='text'],
+    .form-inputs input[type='email'] {
+        height: 40px;
+        width: 300px;
+        font-size: 16px;
+    }
+
+    .form-inputs #msg {
+        width: 300px;
+        height: 300px;
+    }
+
+    .form .text h2,
+    span {
+        line-height: 50px;
+        margin: 0%;
+    }
+
+    .form .text span {
+        font-size: 14px;
+    }
+
+    #button {
+        margin: 40px 0 70px 0;
+        font-size: 14px;
+        padding: 7px 14px;
+        letter-spacing: 1px;
+        font-weight: 700;
+        margin: 40px 100px 70px 100px;
+        display: grid;
+        place-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .map-container iframe {
+        max-width: 90%;
+        /* Adjust maximum width for smaller screens */
+        height: auto;
+        /* Allow the height to adjust proportionally */
+    }
+
+    .map-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .map-container iframe {
+        width: 70%;
+        max-width: 320px;
+        height: 500px;
+        margin-bottom: 20px;
+        margin: 30px 0 60px 0;
+    }
+
+
+    
+}

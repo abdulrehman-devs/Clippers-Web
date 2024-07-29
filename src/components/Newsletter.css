@@ -1,0 +1,102 @@
+.newsletter {
+    background-color: rgb(102, 45, 6);
+    padding: 60px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.newsletter-text p {
+    text-align: center;
+    letter-spacing: 3px;
+    color: aliceblue;
+}
+
+.newsletter-text h4 {
+    text-align: center;
+    color: aliceblue;
+    font-weight: 700;
+    font-size: 50px;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+.newsletter .text-boxes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 60px;
+}
+
+.newsletter .text-boxes h4 {
+    color: aliceblue;
+}
+
+.newsletter .text-boxes input {
+    width: 300px;
+}
+
+.newsletter .text-boxes .submit {
+    width: 100px;
+    border: none;
+    box-shadow: 10px 10px 10px rgb(24, 23, 23);
+    background-color: rgb(31, 30, 30);
+    font-size: 12px;
+    text-align: center;
+    font-weight: 450;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    color: aliceblue;
+    padding: 8px 16px;
+}
+
+.newsletter .text-boxes .submit:hover {
+    background-color: rgb(14, 13, 13);
+}
+
+@media screen and (max-width: 700px) {
+    
+    .newsletter {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+    .newsletter-text p {
+        font-size: 11px;
+        letter-spacing: 0px;
+    }
+    
+    .newsletter-text h4 {
+        font-weight: 700;
+        font-size: 30px;
+    }
+
+    .newsletter .text-boxes {
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .newsletter .text-boxes input {
+        width: 200px;
+    }
+
+    .newsletter .text-boxes .submit {
+        width: 90px;
+    }
+
+    .newsletter .text-boxes h4 {
+        font-size: 18px;
+        text-align: center;
+        line-height: 40px;
+    }
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,84 @@
+.card-body {
+    width: 460px;
+    height: 450px;
+    background-color:rgb(220,220,220);
+    border: 2px dashed rgb(0, 0, 0);
+    padding: 20px 30px;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+    padding: 20px 600px;
+    transition: all 0.3s ease;
+}
+
+.card-body:hover {
+    box-shadow: 10px 10px 10px black;
+}
+
+.card-body h2, h6 {
+    padding: 20px 30px;
+}
+
+.card-body h2 {
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 800;
+    color: rgb(0, 0, 0);
+    letter-spacing: 1px;
+}
+
+.card-body h4 {
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+
+.card-body h6 {
+    color: rgb(0, 0, 0);
+    font-weight: 800;
+    font-size: 20px;
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 1px;
+}
+
+.card-body h2:hover, h4:hover, h6:hover {
+    border: 10px 10px 10px rgb(37, 35, 35);
+}
+
+.card-body button {
+    background-color: orange;
+    text-decoration: none;
+    border: none;
+    box-shadow: 10px 10px 10px black;
+    letter-spacing: 1px;
+    font-weight: 700;
+    padding: 7px 12px;
+    transition: background-color 0.2s ease;
+    margin-bottom: 50px;
+}
+
+.card-body button:hover {
+    background-color: rgba(218, 143, 3, 0.856);
+}
+
+@media screen and (max-width: 600px) {
+
+    .card-body {
+        width: 250px;
+        height: 500px;
+        border-style: double;
+    }
+
+    .card-details h6{
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1100px) {
+
+    .card-body {
+        width: 400px;
+        height: 600px;
+    }
+
+}

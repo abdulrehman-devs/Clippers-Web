@@ -1,0 +1,75 @@
+.hairstyles {
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hairstyles h4 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 70px;
+    font-family: "Dancing Script", cursive;
+    color: rgb(24, 23, 23);
+}
+
+.hairstyles .text p {
+    text-align: center;
+    letter-spacing: 3px;
+    font-size: 18px;
+    margin: 20px 0 50px 0;
+}
+
+.hairstyles .images {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+.hairstyles .images img {
+    width: 200px;
+    height: 300px;
+}
+
+.hairstyles .images img:hover {
+    transform: scale(1.2);
+    transition: 0.5s ease-in-out ;
+}
+
+.hairstyles button {
+    text-align: block;
+    margin: auto;
+    background-color: rgb(143, 64, 12);
+    color: rgb(255, 255, 255);
+    border: 2px solid black;
+    padding: 10px 20px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin: 50px 0 10px 0;
+}
+
+.hairstyles button:hover {
+    background-color: transparent;
+    color: rgb(8, 8, 8);
+    transition: background-color 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 600px) {
+    .hairstyles .images {
+        flex-direction: column;
+    }
+
+    .hairstyles-images img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .last-button {
+        margin: 0 0 10px 0;
+        font-size: 12px;
+        padding: 4px 8px;
+        letter-spacing: 1px;
+    }
+}
