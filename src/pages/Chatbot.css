@@ -1,0 +1,95 @@
+/* Chatbot.css */
+
+.chatbot-container {
+  max-width: 1000px;
+  height: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  color: #f0f0f0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.chatbot-title {
+  text-align: center;
+  color: #ffa500; /* Clippers' orange */
+  font-size: 24px;
+  margin-bottom: 16px;
+  margin-left: 80px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.chatbot-messages {
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 16px;
+  height: 450px;
+  overflow-y: auto;
+  background-color: #121212;
+  margin-bottom: 16px;
+}
+
+.chatbot-message {
+  margin-bottom: 14px;
+  line-height: 1.5;
+}
+
+.chatbot-message strong {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 2px;
+}
+
+.chatbot-message.user {
+  text-align: right;
+}
+
+.chatbot-message.user strong {
+  color: #ffa500;
+}
+
+.chatbot-message.assistant {
+  text-align: left;
+}
+
+.chatbot-message.assistant strong {
+  color: #4caf50; /* A calm assistant green */
+}
+
+.chatbot-input {
+  display: flex;
+  gap: 8px;
+}
+
+.chatbot-input input {
+  flex-grow: 1;
+  padding: 10px;
+  background-color: #2a2a2a;
+  border: 1px solid #444;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.chatbot-input input:focus {
+  border-color: #ffa500;
+  outline: none;
+}
+
+.chatbot-input button {
+  background-color: #ffa500;
+  color: #000;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.chatbot-input button:hover {
+  background-color: #e69500;
+}
