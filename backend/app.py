@@ -10,7 +10,7 @@ load_dotenv()
 # Initialize Flask app
 app = Flask(__name__)
 # Allow requests only from your Netlify frontend
-CORS(app, origins=["https://clippers.netlify.app"])  # ← Replace with your actual Netlify site URL
+CORS(app)  # ← Replace with your actual Netlify site URL
 
 # Get API key from environment
 API_KEY = os.getenv("API_KEY")
@@ -22,6 +22,25 @@ You are a friendly virtual assistant for a barbershop.
 Help customers with information about services, prices, timings, and location.
 
 Location: Askari 11 Sector A Main Building Bedian Road Lahore.
+2nd branch is Main Boulevard Gulberg III.
+
+If in a query except the barber shop, don't give the answer.
+
+Cutting rates:
+Signature: 1200
+Senior Artist: 750
+Junior Artist: 500
+
+Beard rates:
+Signature: 800
+Senior Artist: 650
+Junior Artist: 400
+
+Facial charges ranges from 2000-6000
+
+Sunday the shop remains closed
+
+Give answers in bullets.
 
 Timings:
 - Monday to Saturday: 9 AM to 1 AM
@@ -59,7 +78,7 @@ def ask_llama(user_input):
     return "\n".join(bullets[:15]) if bullets else "\n".join(lines[:15])
 
 # POST route for chatbot
-@app.route("/chatbot", methods=["POST"])
+@app.route("/chat", methods=["POST"])
 def chat():
     data = request.get_json()
     user_message = data.get("message", "")
