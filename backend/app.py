@@ -59,7 +59,7 @@ def ask_llama(user_input):
     return "\n".join(bullets[:15]) if bullets else "\n".join(lines[:15])
 
 # POST route for chatbot
-@app.route("/chat", methods=["POST"])
+@app.route("/chatbot", methods=["POST"])
 def chat():
     data = request.get_json()
     user_message = data.get("message", "")
